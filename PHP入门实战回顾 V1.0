@@ -24,3 +24,18 @@ if (isset($c)) {
   echo "变量c不存在";
 }
 ?>
+### 打印调试变量
+﻿<?php
+$a = true;
+echo $a;
+
+echo "<br>";
+$b = array(1,2,3);
+echo $b;
+
+echo "<br>";
+$c = array(1,2,3);
+print_r($c);
+echo "<br>";
+var_dump($c);
+?>
