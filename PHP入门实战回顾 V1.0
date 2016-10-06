@@ -90,3 +90,10 @@ var_dump($li,$wang);//20 20
 unset($li);
 var_dump($li,$wang);//null 20
 ?>
+### 动态变量
+﻿<?php
+$liubei = "河北";
+$laoda = "liubei";
+$paihang = "laoda";
+echo $laoda,${liubei},$$$paihang;
+?>
