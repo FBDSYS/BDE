@@ -72,3 +72,21 @@ var_dump($li,$wang);
 $wang = "w";
 var_dump($li,$wang);
 ?>
+### 销毁变量
+﻿<?php
+$a = 1;
+unset($a);
+if (isset($a)) {
+  echo "a存在";
+} else {
+  echo "a不存在";
+}
+echo "<br>";
+$li = 29;
+$wang = &$li;
+var_dump($li,$wang);//29 29
+$wang = 20;
+var_dump($li,$wang);//20 20
+unset($li);
+var_dump($li,$wang);//null 20
+?>
