@@ -56,3 +56,19 @@ if (0 == false) {
   echo "空字符串果然假";
 }
 ?>
+### 传值赋值与引用赋值
+<?php
+$wang = 29;
+$li = 23;
+$wang = $li;
+var_dump($li,$wang);
+$wang = "w";
+var_dump($li,$wang);
+echo "<br>";
+$li = 29;
+$wang = 23;
+$wang = $li;
+var_dump($li,$wang);
+$wang = "w";
+var_dump($li,$wang);
+?>
