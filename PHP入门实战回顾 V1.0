@@ -1,4 +1,4 @@
-# 变量检测
+### 变量检测
 ﻿<?php
 $a = null;
 $c = "";
@@ -38,4 +38,21 @@ $c = array(1,2,3);
 print_r($c);
 echo "<br>";
 var_dump($c);
+?>
+### 变量类型转换
+﻿<?php
+//字符串与数字的转换
+$a = "world12.5hello99";
+$a = $a + 3;
+var_dump($a);
+//数字/字符串
+echo "<br>";
+$b = 123;
+$b = $b . "hello";
+echo $b;
+//布尔值得转换
+echo "<br>";
+if (0 == false) {
+  echo "空字符串果然假";
+}
 ?>
